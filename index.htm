@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ir-fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>فرم ورود و عضویت</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+    <!------- css file ------------->
+    <link rel="stylesheet" href="style/style.css">
+    <!------- fontawsome ----------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!---------Preloader-------->
+    <div id="Preloader"></div>
+    <!---------form-------------->
+    <div class="container">
+        <div class="form row  align-items-center justify-content-center">
+            <div class="form-img col-12 col-md-6">
+                <img src="img/Login.gif">
+            </div>
+            <div class="form-box col-12 col-md-6">
+                <div class="btn-box">
+                    <div id="btn"></div>
+                    <div class="btn-group">
+                        <button type="button" class="toggle-btn1" onclick="register()">ثبت نام</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="toggle-btn2" onclick="login()">ورود</button>
+                    </div>
+                </div>
+                <form id="login" class="input-grou">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="نام کاربری">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>معتبر نیست</small>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="رمز عبور">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>معتبر نیست</small>
+                    </div>
+                    <input type="checkbox" class="check-box"><span>مرا به خاطر داشته باش</span>
+                    <button type="submit" class="sumbit-btn">ورود</button>
+                </form>
+                <form id="register" class="input-grou">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="نام کاربری" id="user">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>معتبر نیست</small>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="input-field" placeholder="ایمیل" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>معتبر نیست</small>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="رمز عبور" id="password">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>معتبر نیست</small>
+                    </div>
+                    <input type="checkbox" class="check-box"><span>قوانین و شرایط را قبول دارم</span>
+                    <button type="submit" class="sumbit-btn">ثبت نام</button>
+                </form>
+                <div class="social">
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+<script src="js/form.js"></script>
+
+</html>
